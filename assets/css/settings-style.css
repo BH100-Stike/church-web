@@ -1,0 +1,373 @@
+/* Main Settings Layout */
+.settings-container {
+    display: flex;
+    min-height: calc(100vh - 70px);
+    background-color: var(--bg-color);
+}
+
+.settings-sidebar {
+    width: 280px;
+    background-color: var(--sidebar-bg);
+    padding: 20px;
+    border-right: 1px solid var(--border-color);
+}
+
+.settings-content {
+    flex: 1;
+    padding: 30px;
+    background-color: var(--content-bg);
+}
+
+/* Profile Card */
+.admin-profile-card {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--accent-color);
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upload-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.profile-picture:hover .upload-overlay {
+    opacity: 1;
+}
+
+.upload-overlay i {
+    font-size: 1.5rem;
+}
+
+#profile-upload {
+    display: none;
+}
+
+.profile-stats {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.stat-item i {
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+/* Settings Menu */
+.settings-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.settings-menu a {
+    display: block;
+    padding: 12px 15px;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.settings-menu a:hover {
+    background-color: var(--hover-bg);
+    color: var(--accent-color);
+}
+
+.settings-menu a.active {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.settings-menu a i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Settings Tabs */
+.settings-tab {
+    display: none;
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.settings-tab.active {
+    display: block;
+}
+
+.settings-tab h3 {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--heading-color);
+}
+
+.settings-tab h3 i {
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    text-align: right;
+}
+
+/* Theme Options */
+.theme-options h5 {
+    margin-bottom: 15px;
+    color: var(--heading-color);
+}
+
+.theme-colors {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.color-option {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+.color-option input {
+    position: absolute;
+    opacity: 0;
+}
+
+.color-preview {
+    width: 80px;
+    height: 60px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.color-option:hover .color-preview {
+    transform: scale(1.05);
+}
+
+.color-option input:checked + .color-preview {
+    box-shadow: 0 0 0 2px var(--accent-color);
+}
+
+.color-primary {
+    flex: 1;
+    background-color: var(--primary-color);
+}
+
+.color-secondary {
+    flex: 1;
+    background-color: var(--secondary-color);
+}
+
+.color-accent {
+    flex: 1;
+    background-color: var(--accent-color);
+}
+
+/* Color scheme previews */
+.light-theme {
+    --primary-color: #ffffff;
+    --secondary-color: #f8f9fa;
+    --accent-color: #4e73df;
+}
+
+.dark-theme {
+    --primary-color: #2d3748;
+    --secondary-color: #1a202c;
+    --accent-color: #667eea;
+}
+
+.blue-theme {
+    --primary-color: #ebf5ff;
+    --secondary-color: #e1effe;
+    --accent-color: #3b82f6;
+}
+
+.green-theme {
+    --primary-color: #f0fdf4;
+    --secondary-color: #dcfce7;
+    --accent-color: #22c55e;
+}
+
+/* Accent Color Picker */
+.accent-colors {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.accent-colors label {
+    cursor: pointer;
+}
+
+input[type="color"] {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+/* Password Strength Meter */
+.password-strength {
+    margin-top: 5px;
+}
+
+.strength-meter {
+    height: 5px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #dc3545;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.strength-text span {
+    font-weight: 600;
+}
+
+/* 2FA Setup */
+#2fa-setup {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+#qrcode {
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Notification Options */
+.notification-category {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.notification-options {
+    margin-left: 25px;
+}
+
+.notification-options .form-check {
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .settings-container {
+        flex-direction: column;
+    }
+    
+    .settings-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .admin-profile-card {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .profile-picture {
+        margin: 0 20px 0 0;
+        flex-shrink: 0;
+    }
+    
+    .settings-menu {
+        display: flex;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .settings-menu a {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 576px) {
+    .admin-profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-picture {
+        margin: 0 auto 15px;
+    }
+    
+    .theme-colors {
+        flex-wrap: wrap;
+    }
+}

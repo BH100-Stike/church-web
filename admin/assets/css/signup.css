@@ -1,0 +1,83 @@
+:root {
+    --primary: #064e3b;
+    --secondary: #3f37c9;
+    --light-gray: #f5f7fb;
+}
+
+body {
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.signup-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.signup-header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.signup-header h2 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.signup-header p {
+    opacity: 0.8;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.signup-body {
+    padding: 2rem;
+}
+
+.btn-signup {
+    background: var(--primary);
+    color: white;
+    height: 50px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn-signup:hover {
+    background: #053a2b;
+    transform: translateY(-2px);
+}
+
+/* Include all validation styles from login.css */
+.is-valid,
+.is-invalid,
+.invalid-feedback,
+.form-text,
+.password-requirements {
+    color: #28a745;
+    
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .signup-container {
+        border-radius: 10px;
+    }
+    
+    .signup-header, .signup-body {
+        padding: 1.5rem;
+    }
+}

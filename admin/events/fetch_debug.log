@@ -1,0 +1,63 @@
+Upcoming Events: 0
+Past Events: 3
+Array
+(
+)
+
+Array
+(
+    [0] => Array
+        (
+            [id] => 3
+            [title] => Women's Fellowship
+            [description] => Monthly gathering for women of all ages with worship and testimonies
+            [image_url] => assets/images/events/event.jpg
+            [date] => 2025-08-12
+            [time] => 14:00:00
+            [location] => Fellowship Hall
+            [registration_url] => #
+            [gallery_url] => 
+            [report_url] => 
+            [date_iso] => 2025-08-12
+            [short_date] => Aug 12
+            [formatted_time] => 02:00 PM
+            [event_status] => past
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [title] => Sunday Worship Service
+            [description] => Join us for our weekly worship service 
+            [image_url] => assets/images/events/event.jpg
+            [date] => 2025-08-18
+            [time] => 10:00:00
+            [location] => Main Sanctuary
+            [registration_url] => #
+            [gallery_url] => 
+            [report_url] => 
+            [date_iso] => 2025-08-18
+            [short_date] => Aug 18
+            [formatted_time] => 10:00 AM
+            [event_status] => past
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [title] => Youth Bible Study
+            [description] => Interactive Bible study session for ages 13-18 with games and discussion
+            [image_url] => assets/images/events/event.jpg
+            [date] => 2025-08-20
+            [time] => 18:00:00
+            [location] => Youth Hall
+            [registration_url] => #
+            [gallery_url] => 
+            [report_url] => 
+            [date_iso] => 2025-08-20
+            [short_date] => Aug 20
+            [formatted_time] => 06:00 PM
+            [event_status] => past
+        )
+
+)

@@ -1,0 +1,123 @@
+/* MINISTRIES HERO */
+.ministries-hero {
+  position: relative;
+  height: 60vh;
+  background: linear-gradient(rgba(6, 78, 59, 0.8), rgba(6, 78, 59, 0.8)),
+              url('../images/ministries-hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  margin-top: 80px; /* Account for fixed header */
+}
+
+.ministries-hero .hero-text {
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.ministries-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ministries-hero p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* MAIN MINISTRIES CONTENT */
+.ministries-main {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.ministry-section {
+  margin-bottom: 4rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(6, 78, 59, 0.1);
+}
+
+.ministry-section:last-child {
+  border-bottom: none;
+}
+
+.ministry-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+}
+
+.ministry-image {
+  flex: 1 1 400px;
+}
+
+.ministry-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ministry-content {
+  flex: 1 1 500px;
+}
+
+.ministry-content h2 {
+  color: var(--dark-green);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.ministry-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-green);
+}
+
+.ministry-meta p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ministry-description {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.ministry-leader {
+  font-style: italic;
+  color: #555;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .ministries-hero {
+    height: 50vh;
+    margin-top: 70px;
+  }
+  
+  .ministries-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .ministries-hero p {
+    font-size: 1.2rem;
+  }
+  
+  .ministry-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .ministry-image,
+  .ministry-content {
+    flex: 1 1 100%;
+  }
+}

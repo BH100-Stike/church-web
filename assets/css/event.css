@@ -1,0 +1,190 @@
+ /* ===== Modern Event Styles ===== */
+    :root {
+      --white: #ffffff;
+      --dark-green: #064e3b;
+      --light-green: #e6f2ef;
+      --accent: #c19b2e;
+      --text-dark: #333333;
+      --text-light: #666666;
+      --radius-large: 20px;
+      --radius-small: 8px;
+      --shadow: 0 10px 30px rgba(0,0,0,0.1);
+      --transition: all 0.3s ease;
+    }
+
+    /* Base Styles */
+    .modern-events {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      color: var(--dark-green);
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: var(--accent);
+    }
+
+    /* Event Cards */
+    .event-card-modern {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 4rem;
+      background: var(--white);
+      border-radius: var(--radius-large);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+
+    .event-card-modern:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    .event-image-curve {
+      flex: 0 0 40%;
+      min-height: 300px;
+      overflow: hidden;
+      position: relative;
+      clip-path: ellipse(100% 100% at 0% 50%);
+    }
+
+    .event-image-curve img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .event-card-modern:hover .event-image-curve img {
+      transform: scale(1.05);
+    }
+
+    .event-content {
+      flex: 1;
+      padding: 2rem 2rem 2rem 0;
+    }
+
+    .event-title {
+      font-size: 1.5rem;
+      color: var(--dark-green);
+      margin-bottom: 0.5rem;
+    }
+
+    .event-meta {
+      display: flex;
+      gap: 1.5rem;
+      margin: 1rem 0;
+      color: var(--text-light);
+    }
+
+    .event-meta i {
+      color: var(--accent);
+      margin-right: 0.5rem;
+    }
+
+    .event-description {
+      color: var(--text-dark);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .event-actions {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .event-button {
+      padding: 0.8rem 1.5rem;
+      border-radius: var(--radius-small);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .event-button.primary {
+      background: var(--dark-green);
+      color: var(--white);
+    }
+
+    .event-button.secondary {
+      background: var(--light-green);
+      color: var(--dark-green);
+    }
+
+    .event-button:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    /* Empty State */
+    .no-events {
+      text-align: center;
+      padding: 3rem;
+      background: var(--light-green);
+      border-radius: var(--radius-large);
+      color: var(--text-light);
+    }
+
+    .no-events i {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .event-card-modern {
+        flex-direction: column;
+      }
+      
+      .event-image-curve {
+        flex: 1;
+        width: 100%;
+        min-height: 200px;
+        clip-path: none;
+        border-radius: var(--radius-large) var(--radius-large) 0 0;
+      }
+      
+      .event-content {
+        padding: 1.5rem;
+      }
+      
+      .event-actions {
+        flex-direction: column;
+      }
+    }
+
+    /* Hero Section Overrides */
+    .page-hero {
+      height: 50vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                  url('../images/events-hero.jpg') center/cover no-repeat;
+    }
+
+    /* Modal Overrides */
+    .event-modal .modal-content {
+      border-radius: var(--radius-large);
+    }

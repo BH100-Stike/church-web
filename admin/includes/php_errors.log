@@ -1,0 +1,12 @@
+[19-Jul-2025 13:17:16 Europe/Berlin] PHP Warning:  include(../includes/connect.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\BH\TSINGA WEB\admin\includes\get_search_data.php on line 22
+[19-Jul-2025 13:17:16 Europe/Berlin] PHP Warning:  include(): Failed opening '../includes/connect.php' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\BH\TSINGA WEB\admin\includes\get_search_data.php on line 22
+[19-Jul-2025 13:17:17 Europe/Berlin] PHP Warning:  include(../includes/connect.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\BH\TSINGA WEB\admin\includes\get_search_data.php on line 22
+[19-Jul-2025 13:17:17 Europe/Berlin] PHP Warning:  include(): Failed opening '../includes/connect.php' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\BH\TSINGA WEB\admin\includes\get_search_data.php on line 22
+[19-Jul-2025 13:17:18 Europe/Berlin] PHP Warning:  include(../includes/connect.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\BH\TSINGA WEB\admin\includes\get_search_data.php on line 22
+[19-Jul-2025 13:17:18 Europe/Berlin] PHP Warning:  include(): Failed opening '../includes/connect.php' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\BH\TSINGA WEB\admin\includes\get_search_data.php on line 22
+[19-Jul-2025 13:17:19 Europe/Berlin] PHP Warning:  include(../includes/connect.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\BH\TSINGA WEB\admin\includes\get_search_data.php on line 22
+[19-Jul-2025 13:17:19 Europe/Berlin] PHP Warning:  include(): Failed opening '../includes/connect.php' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\BH\TSINGA WEB\admin\includes\get_search_data.php on line 22
+[19-Jul-2025 13:18:46 Europe/Berlin] PDO Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[19-Jul-2025 13:18:47 Europe/Berlin] PDO Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[19-Jul-2025 13:18:48 Europe/Berlin] PDO Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+[19-Jul-2025 13:18:49 Europe/Berlin] PDO Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'

@@ -1,0 +1,63 @@
+Upcoming Events: 0
+Past Events: 3
+Array
+(
+)
+
+Array
+(
+    [0] => Array
+        (
+            [id] => 3
+            [title] => Children’s Ministry
+            [description] => Fun lessons, crafts, and worship designed just for kids.
+            [image_url] => assets/images/events/event.jpg
+            [date] => 2025-06-01
+            [time] => 
+            [location] => 
+            [registration_url] => 
+            [gallery_url] => 
+            [report_url] => 
+            [date_iso] => 2025-06-01
+            [short_date] => Jun 1
+            [formatted_time] => 
+            [event_status] => past
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [title] => Youth Rally
+            [description] => Join our young people for worship, teaching, and fellowship.
+            [image_url] => assets/images/events/event.jpg
+            [date] => 2025-06-06
+            [time] => 
+            [location] => 
+            [registration_url] => 
+            [gallery_url] => 
+            [report_url] => 
+            [date_iso] => 2025-06-06
+            [short_date] => Jun 6
+            [formatted_time] => 
+            [event_status] => past
+        )
+
+    [2] => Array
+        (
+            [id] => 2
+            [title] => Drama Night
+            [description] => An evening of gospel drama performances by our team.
+            [image_url] => assets/images/events/event.jpg
+            [date] => 2025-06-14
+            [time] => 
+            [location] => 
+            [registration_url] => 
+            [gallery_url] => 
+            [report_url] => 
+            [date_iso] => 2025-06-14
+            [short_date] => Jun 14
+            [formatted_time] => 
+            [event_status] => past
+        )
+
+)
